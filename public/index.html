@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Tracker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>🚚 Food Truck Tracker</h1>
+        <p>Find your favorite food trucks around the city</p>
+        <button id="refreshBtn">🔄 Refresh Locations</button>
+    </header>
+
+    <main>
+        <section id="trucksSection">
+            <h2>Available Food Trucks</h2>
+            <div id="trucksContainer">
+                <p>Loading food trucks...</p>
+            </div>
+        </section>
+
+        <section id="detailsSection" style="display: none;">
+            <h2>Truck Details</h2>
+            <div id="truckDetails"></div>
+            <button id="backBtn">← Back to All Trucks</button>
+        </section>
+
+        <section id="scheduleSection" style="display: none;">
+            <h2>Weekly Schedule</h2>
+            <div id="scheduleDetails"></div>
+            <button id="backFromScheduleBtn">← Back to Truck Details</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Food Truck Tracker Demo - Built with Node.js & Express</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
